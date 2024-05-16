@@ -34,7 +34,7 @@ export default function home() {
                 <img className='hero-image' src={hero} alt="hero image" />
             </div>
         </div>
-        <button className='contact-me-btn'>Contact Me</button>
+        <Link to={'/contact'}><button className='contact-me-btn'>Contact Me</button></Link>
     </div>
     <div className="about-section">
       <h2 className="about-header">About Me</h2>
