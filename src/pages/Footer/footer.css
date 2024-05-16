@@ -1,0 +1,78 @@
+.footer-cover{
+    background-color: #1C1C1C;
+    font-family: var(--primary-font);
+}
+
+.footer{
+    width: 90vw;
+    margin: auto;
+
+}
+
+.footer-logo{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 5vh;
+    padding-top: 5%;
+    font-family: var(--primary-font);
+}
+
+.contact-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.contact-us-header, .subscribe-header{
+    color: #BD1B7F;
+    font-size: 1.4rem;
+    padding-top: 2vh;
+}
+
+.mobile-footer, .mail-footer{
+    font-size:1rem ;
+    font-weight: 600;
+}
+
+
+.subscribe{
+    width: 60%;
+    flex-direction: column;
+    display: flex;
+    
+}
+
+.email-input{
+    border-radius: 8px;
+    background-color: #1C1C1C;
+    padding: 2vh 1.5vw 2vh 2.5vw;
+    border: 2px solid rgb(185, 185, 185);
+    font-family: var(--primary-font);
+}
+
+.subscribe-button{
+    background-color: #BD1B7F;
+    border: none;
+    border-radius: 8px;
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+    margin-top: 1.5vh;
+    cursor: pointer;
+}
+
+.dermacation-line{
+    width: 100%;
+    height: .1vh;
+    border: 1px solid #BD1B7F;
+    margin-top: 3vh;
+}
+
+.footer-socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8vh;
+    padding-bottom: 6vh;
+    width: 60%;
+    margin: auto;
+}

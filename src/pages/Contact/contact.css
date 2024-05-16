@@ -1,0 +1,53 @@
+.contact{
+    width: 90%;
+    margin: auto;
+    font-family:var(--primary-font) ;
+    display: flex;
+    flex-direction: column;
+}
+
+.get-intouch{
+    width: 30%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.name-group input{
+    margin-bottom: 2.5vh;
+}
+
+label{
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.name-group, .email-group, .message-group{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 0;
+}
+
+span{
+    color:#a3a3a3;
+}
+
+.contact input, textarea{
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    padding: 10px 10px;
+    background-color: #282A29;
+
+}
+
+.contact-subscribe{
+    background-color: #BD1B7F;
+    border: none;
+    border-radius: 8px;
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+    margin-top: 1.5vh;
+    cursor: pointer;
+    font-family: var(--primary-font);
+    width: 70%;
+}

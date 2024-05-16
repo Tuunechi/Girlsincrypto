@@ -1,0 +1,16 @@
+.navbar{
+    font-family: var(--primary-font);
+    display: flex;
+    width: 80vw;
+    margin: 5vh auto 0 auto;
+    align-items: center;
+    justify-content:space-between ;
+}
+
+.logo{
+    font-size: 1rem;
+}
+
+.nav-contact-link{
+    display: none;
+}
