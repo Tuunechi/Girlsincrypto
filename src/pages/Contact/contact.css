@@ -1,3 +1,7 @@
+a{
+    color: whitesmoke;
+}
+
 .contact{
     width: 85%;
     margin: auto;
@@ -6,9 +10,6 @@
     flex-direction: column;
 }
 
-a{
-    color: whitesmoke;
-}
 .get-intouch{
     width: 45%;
     margin-top: 15%;
@@ -55,4 +56,5 @@ span{
     cursor: pointer;
     font-family: var(--primary-font);
     width: 70%;
+    color: whitesmoke;
 }
