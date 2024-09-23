@@ -14,6 +14,14 @@ a{
     overflow-x: hidden;
 }
 
+.heart{
+    width: 15vw;
+    height: 6vh;
+    margin-top: 4rem;
+    margin-right: 3rem;
+    object-fit: contain;
+}
+
 .hero{
     margin-top: 15vh;
     margin-left: auto;
@@ -62,7 +70,7 @@ a{
 }
 
 .about-section, .roles-and-responsibilities{
-    width: 90%;
+    width: 95%;
     margin: auto;
     font-family: var(--primary-font);
     line-height: 24px;
@@ -77,6 +85,19 @@ a{
 .about-paragraph, .project-overview-text, .roles-paragraph, .each-project-text, .community-text-and-pic{
     font-size: 14px;
     font-weight: 200;
+}
+
+.see-more{
+    background-color: #BD1B7F;
+    border: none;
+    margin-top: 12%;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+    border-radius: 8px;
+    margin-left: 5%;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .about-social-links{
@@ -103,9 +124,17 @@ a{
 
 .project-details{
     margin: 12vh auto 0 auto;
-    width: 90%;
+    width: 100%;
     font-family: var(--primary-font);
+    position: relative;
 }
+
+
+.project-details-header{
+    width: 95%;
+    margin: auto;
+}
+
 
 
 .color-pink{
@@ -114,6 +143,8 @@ a{
 
 .each-project{
     margin-top: 8vh;
+    width: 95%;
+    margin-left: auto;
 }
 
 .each-projects-social{
@@ -123,9 +154,61 @@ a{
     justify-content: space-between;
 }
 
+
+.bottom-blur{
+    max-height: 600px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.bottom-blur::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px; /* Adjust the height of the fade */
+    background: linear-gradient(to bottom, rgba(29, 28, 28, 0) 0%, rgb(38, 38, 38) 100%);
+    pointer-events: none;
+    backdrop-filter: blur(2px);
+}
+
+
+.testimonies{
+    width: 95%;
+    margin-left: auto;
+    display: flex;
+    overflow-x: hidden;
+    margin-top: 15%;
+}
+
+.testimonies img{
+    border-radius: 50%;
+    width: 25%;
+}
+
+
+.each-testimony{
+    min-width: 80%;
+    font-family: var(--primary-font);
+    font-weight: 200;
+    font-size: 14px;
+
+}
+
+.pic-name{
+    padding-bottom: 5%;
+}
+
+.pic-name p{
+    font-weight: 400;
+}
+
 .community-building{
     font-family: var(--primary-font);
     margin-top: 12vh;
+    width: 95%;
+    margin-left: auto;
 }
 
 .community-image{

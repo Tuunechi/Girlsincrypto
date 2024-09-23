@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../Navbar/navbar'
 import background from './images/background.svg'
 import heart from './images/heart-group.svg'
@@ -15,11 +15,42 @@ import coinstore from './images/coinstore.svg'
 import linkedin from './images/Linkedin.svg'
 import byte from './images/byte.svg'
 import cassava from './images/cassava.svg'
-import community from './images/community.svg'
+import community from './images/community.png'
 import Footer from '../Footer/footer'
+import CARLOS from './images/Carlos-Remirez.jpg'
+import Book from './images/YaZDTR02A7HUfpotgaYSl6GrD2I (1).png'
+
 
 
 export default function home() {
+
+  const [isClicked, setIsClicked] = useState(false)
+
+  const handleClick = ()=>{
+    setIsClicked(!isClicked)
+    console.log(isClicked);
+  }
+
+
+  useEffect(()=>{
+    const elements = document.querySelectorAll('.each-project')
+  console.log(elements)
+
+    // const ids  = elements.length - 1
+    if (isClicked){
+        elements.forEach((element, index) => {
+          element.style.display = "block";
+    });
+  }else{
+    elements.forEach((element,index) =>{
+      if(index >= 2)
+      element.style.display = "none";
+    })
+  }
+  } ,[isClicked])
+  
+  
+  
   return (
     <div>
     <div className='home-container'>
@@ -30,7 +61,7 @@ export default function home() {
               <h2 className='profession'>Project Manager <br/> & Speaker</h2>
             </div>
             <div className="hero-image-group">
-                <img src={heart} alt="heart" />
+                <img src={heart} alt="heart" className='heart'/>
                 <img className='hero-image' src={hero} alt="hero image" />
             </div>
         </div>
@@ -73,7 +104,7 @@ export default function home() {
       </p>
       </div>
 
-      <div className="project-details">
+      <div className={`project-details ${!isClicked ? "bottom-blur" : "blur-off"}`}>
         <h2 className="project-details-header">Project Details</h2>
         <div className="each-project">
           <img src={byte} alt="byte logo" className="project-image" />
@@ -105,7 +136,54 @@ export default function home() {
             <img src={linkedin} alt="linkedin" />
           </div>
         </div>
+        
+      </div>  
+      <button className='see-more' onClick={handleClick}>{isClicked ? 'See less': 'see more'}</button>
 
+      <div className="testimonies">
+        <div className="each-testimony">
+          <div className="pic-name">
+            <img src={CARLOS} alt="" className="testifyer-pic" />
+            <p className="testifiyer-name">Carlos Remirez</p>
+          </div>
+          <p className="testimony">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facere nisi odio recusandae quam.</p>
+        </div>
+        <div className="each-testimony">
+          <div className="pic-name">
+            <img src={CARLOS} alt="" className="testifyer-pic" />
+            <p className="testifiyer-name">Carlos Remirez</p>
+          </div>
+          <p className="testimony">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facere nisi odio recusandae quam.</p>
+        </div>
+        <div className="each-testimony">
+          <div className="pic-name">
+            <img src={CARLOS} alt="" className="testifyer-pic" />
+            <p className="testifiyer-name">Carlos Remirez</p>
+          </div>
+          <p className="testimony">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facere nisi odio recusandae quam.</p>
+        </div>
+        <div className="each-testimony">
+          <div className="pic-name">
+            <img src={CARLOS} alt="" className="testifyer-pic" />
+            <p className="testifiyer-name">Carlos Remirez</p>
+          </div>
+          <p className="testimony">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facere nisi odio recusandae quam.</p>
+        </div>
+       
+      </div>
+
+      <div className="learn-crypto">
+        <div className="learn-header">Learn from the Best</div>
+        <div className="books">
+          <img src="" alt="" className="book-photo" />
+          <div className="book-title">Master web3 with easy books</div>
+        </div>
+        <div className="youtube">
+          <img src="" alt="" className="youtube-cover" />
+          <div className="book-title"></div>
+        </div>
+
+      </div>
         <div className="community-building">
           <h2 className="community-header">Community Building Initiatives</h2>
           <p className="community-text-and-pic">
@@ -116,7 +194,8 @@ export default function home() {
            I’ve consistently endeavored to cultivate thriving communities that serve as the bedrock of project success
           </p>
         </div>
-      </div>
+
+
     <Footer/>
     </div>
   )
