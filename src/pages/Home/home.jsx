@@ -18,7 +18,9 @@ import cassava from './images/cassava.svg'
 import community from './images/community.png'
 import Footer from '../Footer/footer'
 import CARLOS from './images/Carlos-Remirez.jpg'
-import Book from './images/YaZDTR02A7HUfpotgaYSl6GrD2I (1).png'
+import Book from './images/book.png'
+import Arrow from './images/Arrow.svg'
+import YoutubeEmbed from '../../components/YoutubeEmbed'
 
 
 
@@ -138,9 +140,33 @@ export default function home() {
         </div>
         
       </div>  
-      <button className='see-more' onClick={handleClick}>{isClicked ? 'See less': 'see more'}</button>
+      <button className='see-more' onClick={handleClick}>{isClicked ? 'See less': 'See more'}</button>
 
-      <div className="testimonies">
+      <div className="learn-crypto">
+        <h2 className="learn-header">Learn From the Best</h2>
+        <div className="books">
+          <Link to={'./'}><img src={Book} alt="" className="book-photo" /></Link>
+          <Link to={'./'}><h3 className="book-title">Master Web3 With Easy Books <img src={Arrow} alt="" /></h3></Link>
+        </div>
+        <div className="youtube">
+          <p className="encouragement">You might have tried a couple places or being to a couple tutorials but this is your one stop! join the team as we take 
+            you on a ride to career and investment prowess!
+          </p>
+          <YoutubeEmbed embedId="_gxoP30TxHk" />
+        </div>
+
+      </div>
+        <div className="community-building">
+          <h2 className="community-header">Community Building Initiatives</h2>
+          <p className="community-text">
+           My community-building initiatives have been instrumental in driving adoption and fostering a sense of belonging
+           within project ecosystems. From hosting engaging events to curating
+           insightful forums and launching impactful social media campaigns<br/>
+           I’ve consistently endeavored to cultivate thriving communities that serve as the bedrock of project success
+          </p>
+        </div>
+
+        <div className="testimonies">
         <div className="each-testimony">
           <div className="pic-name">
             <img src={CARLOS} alt="" className="testifyer-pic" />
@@ -171,29 +197,6 @@ export default function home() {
         </div>
        
       </div>
-
-      <div className="learn-crypto">
-        <div className="learn-header">Learn from the Best</div>
-        <div className="books">
-          <img src="" alt="" className="book-photo" />
-          <div className="book-title">Master web3 with easy books</div>
-        </div>
-        <div className="youtube">
-          <img src="" alt="" className="youtube-cover" />
-          <div className="book-title"></div>
-        </div>
-
-      </div>
-        <div className="community-building">
-          <h2 className="community-header">Community Building Initiatives</h2>
-          <p className="community-text-and-pic">
-           My community-building initiatives have been instrumental in driving adoption and fostering a sense of belonging
-           within project ecosystems. From hosting engaging events to curating
-           insightful forums and launching impactful social media campaigns,<br/>
-           <img src={community} alt="a community picture" className="community-image" /><br/>
-           I’ve consistently endeavored to cultivate thriving communities that serve as the bedrock of project success
-          </p>
-        </div>
 
 
     <Footer/>

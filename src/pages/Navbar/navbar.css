@@ -1,7 +1,7 @@
 .navbar{
     font-family: var(--primary-font);
     display: flex;
-    width: 80vw;
+    width: 90vw;
     margin: 5vh auto 0 auto;
     align-items: center;
     justify-content:space-between ;
@@ -9,7 +9,7 @@
 }
 
 .logo{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 
@@ -26,14 +26,14 @@
 }
 
 .top{
-    height: .7vh;
+    height: .4vh;
     background-color: #BD1B7F;
     margin-bottom: .5vh;
 }
 
 .bottom{
     background-color: rgb(247, 247, 247);
-    height: .7vh;
+    height: .4vh;
     width: 75%;
 }
 
@@ -44,9 +44,9 @@
     align-items: center;
     width: 90vw;
     position: absolute;
-    height: 40vh;
+    height: 35vh;
     top: 5vh;
-    margin-left:-20px ;
+    /* margin-left:-20px ; */
     font-family: var(--primary-font);
     background: rgba(180, 180, 180, 0.2);
     border-radius: 16px;
@@ -103,7 +103,7 @@
     display: flex;
     flex-direction: column;
     font-family: var(--primary-font);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     height: 60%;
 }
 

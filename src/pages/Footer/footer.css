@@ -8,7 +8,7 @@ a{
 }
 
 .footer{
-    width: 90vw;
+    width: 95vw;
     margin: auto;
 
 }
@@ -41,7 +41,7 @@ a{
 
 
 .subscribe{
-    width: 70%;
+    width: 75%;
     flex-direction: column;
     display: flex;
     

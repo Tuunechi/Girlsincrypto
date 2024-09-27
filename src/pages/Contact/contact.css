@@ -3,7 +3,7 @@ a{
 }
 
 .contact{
-    width: 85%;
+    width: 90%;
     margin: auto;
     font-family:var(--primary-font) ;
     display: flex;

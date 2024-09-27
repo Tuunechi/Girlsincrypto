@@ -1,0 +1,21 @@
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+    .video-responsive {
+      max-width: 98%; /* Ensures it doesn't exceed the screen width */
+      padding-bottom: 70%; /* Adjust aspect ratio to 4:3 for smaller screens if desired */
+    }
+  }
