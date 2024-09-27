@@ -21,10 +21,19 @@ import CARLOS from './images/Carlos-Remirez.jpg'
 import Book from './images/book.png'
 import Arrow from './images/Arrow.svg'
 import YoutubeEmbed from '../../components/YoutubeEmbed'
+import {gsap} from 'gsap'
+import {useGSAP} from '@gsap/react'
+
+
+
 
 
 
 export default function home() {
+
+  useGSAP(()=>{
+    gsap.from(".heart", {scale:1.8, repeat: -1, repeatDelay: 1})
+  })
 
   const [isClicked, setIsClicked] = useState(false)
 
