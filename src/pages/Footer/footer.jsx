@@ -17,7 +17,7 @@ export default function Footer() {
             <p className="footer-logo">Dcryptgirl</p>
             <div className="contact-footer">
               <div className="contact-me-group">
-                <h2 className="contact-us-header">Contact Me</h2>
+                <h2 className="contact-us-header">Contact Us</h2>
                 <p className="mobile-footer"><img src={Phone} alt="phone ichromcon" className="mobile-icon" /> +2348154154475</p>
                 <p className="mail-footer"><img src={Mail} alt="phone icon" className="mail-icon" /> Contact@dcryptgirl.com</p>
               </div>  
@@ -30,10 +30,10 @@ export default function Footer() {
         </div>
         <div className='dermacation-line'></div>
         <div className="footer-socials">
-          <Link><img src={Twitter} alt="twitter link" /></Link>
-          <Link><img src={Tiktok} alt="tiktok link" /></Link>
-          <Link><img src={instagram} alt="instagram link" /></Link>
-          <Link><img src={Linkedin} alt="Linkedin link" /></Link>
+          <a href={"https://x.com/dcryptgirll?s=21&t=pxxd9peqVc3RFmQnIRJ9aQ"}><img src={Twitter} alt="twitter link" /></a>
+          <a href={"https://www.tiktok.com/@dcryptgirl?_t=8opqXNNHb9a&_r=1"}><img src={Tiktok} alt="tiktok link" /></a>
+          <a href={"https://www.instagram.com/dcryptgirl?igsh=cndnM3owaGNzc3V2"}><img src={instagram} alt="instagram link" /></a>
+          <a href={"https://www.linkedin.com/in/deborah-ifegwu-9717b7237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"}><img src={Linkedin} alt="Linkedin link" /></a>
         </div>
     </div>
   )

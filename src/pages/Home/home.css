@@ -67,11 +67,11 @@ a{
 
 .contact-me-btn {
     margin: 8vh auto 0 auto; 
-    width: 60%;
+    width: 50%;
     border-radius: 10px;
     border: none;
     background-color: #BD1B7F;
-    padding: 2vh 6vw;
+    padding: 1.5vh 4vw;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -83,45 +83,63 @@ a{
     color: whitesmoke;
 }
 
-.about-section, .roles-and-responsibilities{
+.about-section{
     width: 95%;
-    margin: auto;
+    margin: 7vh auto 0 auto;
     font-family: var(--primary-font);
-    line-height: 24px;
-    margin-top: 12vh;
 }
 
-.about-header, .project-overview-header, .project-overview-header-design, .roles-header, .project-name, .community-header, .learn-header, .youtube-header{
+.roles-and-responsibilities{
+    margin-top: 7vh;
+    margin-left: auto;
+    font-family: var(--primary-font);
+    margin: 5vh auto 0 auto;
+    width: 95%;
+}
+
+.about-header, .project-overview-header, .project-overview-header-design, .roles-header, .project-name, .community-header, .proofs-header, .learn-header, .youtube-header{
     line-height: 28px;
-    margin-bottom: 3vh;
+    margin-bottom: 1.5vh;     
 }
 
 .about-paragraph, .project-overview-text, .roles-paragraph, .each-project-text, .community-text-and-pic, .encouragement{
     font-size: 1rem;
     font-weight: 350;
+    opacity: .85;
 }
 
-.see-more{
-    border: 2px solid #BD1B7F;
-    background-color: rgba(40, 42, 41, 1);
-    margin-top: 12%;
-    padding: 10px 50px;
-    font-size: 1.2rem;
-    font-family: var(--primary-font);
-    border-radius: 8px;
-    margin-left: 5%;
-    font-weight: 400;
-    color: whitesmoke;
-    transition: .2s ease-in;
+
+
+.images{
+    width: 95%;
+    /* height: auto; */
+    margin: 7% auto 0 auto;
+    /* background-color: #BD1B7F; */
+    /* overflow: hidden; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.see-more:hover{
-    background-color: #BD1B7F;
+
+.images img{
+    width: 100%;
+    height: auto;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
 }
 
-/* .see-more a{
-    color: #BD1B7F;
-} */
+.load-more-pics{
+    background-color: #0f0f0f;
+    border: 1px solid #BD1B7F;
+    border-radius: 5px;
+    padding: 2.5% 5%;
+    margin-left: 2%;
+    margin-top: 2%;
+    opacity: .7;
+
+}
+
 
 .about-social-links{
     display: flex;
@@ -133,6 +151,8 @@ a{
 
 .curly{
     margin-top: -8vh;
+    position: relative;
+    z-index: -1;
 }
 
 .project-overview{
@@ -146,16 +166,19 @@ a{
 }
 
 .project-details{
-    margin: 12vh auto 0 auto;
-    width: 100%;
+    margin: 2vh auto 0 auto;
+    width: 95%;
     font-family: var(--primary-font);
     position: relative;
+    display: flex;
 }
 
 
 .project-details-header{
-    width: 95%;
-    margin: auto;
+    margin-left: auto;
+    font-size: .7rem;
+    margin-top: 12%; 
+    display: none;
 }
 
 
@@ -164,36 +187,19 @@ a{
     color: var(--accent-color);
 }
 
-.each-project{
-    margin-top: 8vh;
-    width: 98%;
-    margin-left: auto;
-}
 
-.each-projects-social{
-    padding-top: 2vh;
+.projects{
     display: flex;
-    width: 25%;
-    justify-content: space-between;
+    overflow: hidden;
+    /* mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%); */
 }
 
 
-.bottom-blur{
-    max-height: 600px;
-    overflow-y: hidden;
-    position: relative;
-}
-
-.bottom-blur::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 180px; /* Adjust the height of the fade */
-    background: linear-gradient(to top, rgba(189, 27, 127, 0.113) 0%, rgba(40, 42, 41, 1) 100%);
-    pointer-events: none;
-    backdrop-filter: blur(2px);
+.projects img{
+ max-width: 25%;
+ margin-right: 7%;
+ /* overflow-x: hidden; */
+ /* image-rendering: crisp-edges; */
 }
 
 
@@ -209,10 +215,15 @@ a{
 
 
 .learn-crypto{
-    width: 98%;
+    width: 100%;
     margin-left: auto;
     margin-top: 20%;
     font-family: var(--primary-font);
+}
+
+.learn-header, .proofs-header{
+    width: 98%;
+    margin-left: auto;
 }
 
 .book-title{

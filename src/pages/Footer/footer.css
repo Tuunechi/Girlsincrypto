@@ -14,7 +14,7 @@ a{
 }
 
 .footer-logo{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: 600;
     margin-top: 5vh;
     padding-top: 5%;
@@ -30,15 +30,22 @@ a{
 
 .contact-us-header, .subscribe-header{
     color: #BD1B7F;
-    font-size: 1.4rem;
-    padding-top: 2vh;
+    font-size: 1.2rem;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    
 }
 
 .mobile-footer, .mail-footer{
-    font-size:1rem ;
-    font-weight: 600;
+    font-size:.9rem ;
+    font-weight: 350;
 }
 
+
+.mobile-footer img, .mail-footer img{
+    padding-right: 15px;
+    margin-top: 4px;
+}
 
 .subscribe{
     width: 75%;
@@ -51,7 +58,7 @@ a{
     border-radius: 8px;
     background-color: #1C1C1C;
     padding: 2vh 1.5vw 2vh 2.5vw;
-    border: 2px solid rgb(185, 185, 185);
+    border: 1px solid rgb(185, 185, 185);
     font-family: var(--primary-font);
     font-size: 16px;
 }

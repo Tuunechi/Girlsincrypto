@@ -33,15 +33,15 @@ export default function navbar() {
             </div>
             <div className={`nav-links-and-socials ${isClosed? "nav-open" : "nav-close"}`}>
               <div className={`nav-links ${isClosed? "nav-links-open" : "nav-links-close"}`}>
-                <Link className='nav-link'>Home</Link>
-                <Link className='nav-link'>Learn</Link>
-                <Link className='nav-link'>Project</Link>
-                <Link className='nav-link'>Contact</Link>
+                <Link to={'/'} className='nav-link'>Home</Link>
+                <a className='nav-link' href='#learn'>Learn</a>
+                <a href='#about' className='nav-link'>Project</a>
+                <Link to={'./contact'} className='nav-link'>Contact</Link>
               </div>
               <div className="nav-socials">
-                <Link className='contact-image'><img src={Instagram} className='nav-social' alt="contact"/></Link>
-                <Link className='contact-image'><img src={Linkedin} className='nav-social' alt="contact"/></Link>
-                <Link className='contact-image'><img src={X} className='nav-social' alt="contact"/></Link>
+               <a href={'https://www.instagram.com/dcryptgirl?igsh=cndnM3owaGNzc3V2'}><img src={Instagram} className='nav-social' alt="contact"/></a>
+               <a href={"https://www.linkedin.com/in/deborah-ifegwu-9717b7237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"}><img src={Linkedin} className='nav-social' alt="contact"/></a>
+               <a href={"https://x.com/dcryptgirll?s=21&t=pxxd9peqVc3RFmQnIRJ9aQ"}><img src={X} className='nav-social' alt="contact"/></a>
               </div>
             </div>
             <Link className='contact-image'><img src={Contact} className='nav-contact-link' alt="contact"/></Link>

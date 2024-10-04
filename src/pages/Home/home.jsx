@@ -18,12 +18,29 @@ import cassava from './images/cassava.svg'
 import community from './images/community.png'
 import Footer from '../Footer/footer'
 import CARLOS from './images/Carlos-Remirez.jpg'
+import EMILY from './images/Aisha-Khan.jpg'
+import Lady from './images/Ananya-Patel.jpg'
+import Guy from './images/Lars-Johansson.jpg'
+import Guy2 from './images/John-Smith.jpg'
+import Lady2 from './images/Li-Wei.jpg'
 import Book from './images/book.png'
 import Arrow from './images/Arrow.svg'
 import YoutubeEmbed from '../../components/YoutubeEmbed'
-import {gsap} from 'gsap'
+import {gsap, Linear} from 'gsap'
 import {useGSAP} from '@gsap/react'
+import kwikpik from './images/kwik.svg'
+import dojima from './images/dojima.svg'
+import nft from './images/nft.svg'
+import despace from './images/despace.svg'
+// import images from '../Gallery/Gallery.js'
+import Gallery from '../Gallery/Gallery.jsx'
+import { images } from '../Gallery/Gallery.jsx'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+
+
+
+gsap.registerPlugin(ScrollTrigger);
 
 
 
@@ -31,39 +48,99 @@ import {useGSAP} from '@gsap/react'
 
 export default function home() {
 
+  const [higherLimit, setHigherLimit] = useState(5)   
+  const [lowerLimit, setLowerLimit] = useState(0)   
+
+
+
+const refinedImages = images.filter((_, index) => index >= lowerLimit && index <= higherLimit)
+.map((image, index)=>{
+  return <div className='pictorial-proof'><img key={index} className="refinedImages" src={image}/></div>
+})
+
+const imageIndex = images.length - 1
+
+const handleLoadMore = ()=>{
+  if(higherLimit >= imageIndex && lowerLimit >= imageIndex - 5){
+    setHigherLimit(5)
+    setLowerLimit(0)
+  }else{
+    setHigherLimit(prevLimit => prevLimit + 5)
+    setLowerLimit(prevLimit => prevLimit + 5)
+  }
+}
+
+  
   useGSAP(()=>{
-    gsap.from(".heart", {scale:1.8, repeat: -1, repeatDelay: 1})
+    gsap.from(".heart", {scale:1.3, repeat: -1, repeatDelay: 1})
   })
 
-  const [isClicked, setIsClicked] = useState(false)
 
-  const handleClick = ()=>{
-    setIsClicked(!isClicked)
-    console.log(isClicked);
-  }
+    useGSAP(()=>{
+      gsap.to(".project-image", {translateX:-window.innerWidth - 300, repeat:-1, duration: 10, ease:"linear",
+        // onComplete: () => {
+        //   gsap.set(".project-image", { translateX:-1});
+        // },
+      });
+    })
+
+    useGSAP(()=> {
+      // Select all elements with the class ".section"
+      const sections = document.querySelectorAll(".section");
+      
+      sections.forEach(section => {
+        gsap.fromTo(section, 
+          { opacity: 0.05, y: 50 }, // Initial state before scrolling
+          {
+            opacity: 1,
+            y: 0,  // State after the scroll
+            scrollTrigger: {
+              trigger: section,   // Trigger for each individual section
+              start: 'top 40%',   // Animation starts when top of section hits 80% of viewport
+              end: 'bottom 20%',  // Animation ends when bottom of the section hits 20% of viewport
+              scrub: 1,           // Smooth scrolling effect
+              // markers: true,      // Show markers for debugging (remove later)
+              toggleActions: "play none none none", // Only play once when section comes into view
+            }
+          });
+      });
+    });
+
+    // useGSAP(()=>{
+    //   gsap.fromTo(".curly", {scaleX:0.5}, {scaleX:1})
+    // })
+
+  
+
+  // const [isClicked, setIsClicked] = useState(false)
+
+  // const handleClick = ()=>{
+  //   setIsClicked(!isClicked)
+  //   console.log(isClicked);
+  // }
 
 
-  useEffect(()=>{
-    const elements = document.querySelectorAll('.each-project')
-  console.log(elements)
+  // useEffect(()=>{
+  //   const elements = document.querySelectorAll('.each-project')
+  // console.log(elements)
 
     // const ids  = elements.length - 1
-    if (isClicked){
-        elements.forEach((element, index) => {
-          element.style.display = "block";
-    });
-  }else{
-    elements.forEach((element,index) =>{
-      if(index >= 2)
-      element.style.display = "none";
-    })
-  }
-  } ,[isClicked])
+  //   if (isClicked){
+  //       elements.forEach((element, index) => {
+  //         element.style.display = "block";
+  //   });
+  // }else{
+  //   elements.forEach((element,index) =>{
+  //     if(index >= 2)
+  //     element.style.display = "none";
+  //   })
+  // }
+  // } ,[isClicked])
   
   
   
   return (
-    <div>
+  <div>
     <div className='home-container'>
         <Navbar/>
         <div className="hero">
@@ -76,36 +153,26 @@ export default function home() {
                 <img className='hero-image' src={hero} alt="hero image" />
             </div>
         </div>
-        <Link to={'/contact'}><button className='contact-me-btn'>Contact Me</button></Link>
+        <a href={'https://calendly.com/dcryptgirl/30min'}><button className='contact-me-btn'>Book a Call</button></a>
     </div>
+    <section className='section'>
     <div className="about-section">
       <h2 className="about-header">About Me</h2>
       <p className="about-paragraph">
-      Hello, I’m Deborah, a seasoned Web 3 project manager and community builder with three years of immersive experience in the blockchain space. 
-      My journey has been defined by a passion for nurturing innovative projects from inception to fruition,
-       with a keen focus on fostering vibrant and engaged communities.
+      I’m Deborah, a Web 3 project manager and community builder with three years of experience
+       in the blockchain space. I’ve worked with projects like DeSpace Protocol, Coinstore, Dojima Network, ByteonBlast, 
+       and Cassava Network, playing a key role in their growth from the early stages to success.
       </p>
-      <div className="about-socials">
+      <div className="about-socials" id='about'>
         <div className="about-social-links">
-          <Link><img src={twitter} alt="twitter-icon" /></Link>
-          <Link><img src={tiktok} alt="tiktok-icon" /></Link>
-          <Link><img src={instagram} alt="instagram-icon" /></Link>
+          <a href={'https://www.instagram.com/dcryptgirl?igsh=cndnM3owaGNzc3V2'}><img src={twitter} alt="twitter-icon" /></a>
+          <a href={"https://www.tiktok.com/@dcryptgirl?_t=8opqXNNHb9a&_r=1"}><img src={tiktok} alt="tiktok-icon" /></a>
+          <a href={"https://x.com/dcryptgirll?s=21&t=pxxd9peqVc3RFmQnIRJ9aQ"}><img src={instagram} alt="instagram-icon" /></a>
         </div>
         <img src={curly} alt="social icon grouper" className="curly" />
       </div>
-
-      <div className="project-overview">
-        <div className="project-overview-header-group">
-        <h2 className="project-overview-header">Project Overview</h2>
-        <img src={doubleCurly} alt="" className="project-overview-header-design" />
-        </div>
-      </div>
-      <p className="project-overview-text">
-      Throughout my career, I’ve had the privilege of collaborating with groundbreaking projects such as DeSpace Protocol, 
-      Coinstore, Dojima Network, ByteonBlast, and Cassava Network, miss peaches etc From their nascent stages, I’ve been intricately 
-      involved in shaping their trajectories towards success.
-      </p>
     </div>
+
 
     <div className="roles-and-responsibilities">
       <h2 className="roles-header">Roles And Responsibilities</h2>
@@ -113,49 +180,45 @@ export default function home() {
       <span className='color-pink'>My expertise lies in community cultivation</span>, KOL marketing, and compelling content creation, all geared 
       towards propelling projects towards unparalleled growth and visibility.
       </p>
+    </div>
+
+    <div className="project-details">
+        <h2 className="project-details-header">Trusted By</h2>
+
+        <div className="projects">
+          <img src={coinstore} alt="coinstore log" className="project-image coinstore" />
+          <img src={kwikpik} alt="byte logo" className="project-image kwikpik" />
+          <img src={cassava} alt="cassava log" className="project-image cassava" />
+          <img src={dojima} alt="dojima logo" className="project-image dojima" />
+          <img src={nft} alt="nft log" className="project-image nft" />
+          <img src={despace} alt="nft log" className="project-image despace" />
+          <img src={coinstore} alt="coinstore log" className="project-image coinstore" />
+          <img src={kwikpik} alt="byte logo" className="project-image kwikpik" />
+          <img src={cassava} alt="cassava log" className="project-image cassava" />
+          <img src={dojima} alt="dojima logo" className="project-image dojima" />
+          <img src={nft} alt="nft log" className="project-image nft" />
+          <img src={despace} alt="nft log" className="project-image despace" />
+        </div>  
+    </div>  
+      {/* <button className='see-more' onClick={handleClick}>{isClicked ? 'See less': 'See more'}</button> */}
+    </section>
+
+    <section>
+    <div className="image-proofs">
+      {/* <h2 className='proofs-header'>For Your Eyes</h2> */}
+      <div className='images'>
+      {refinedImages}
       </div>
+      <button className="load-more-pics" onClick={handleLoadMore}>Load More </button>
+    </div>
+    </section>
 
-      <div className={`project-details ${!isClicked ? "bottom-blur" : "blur-off"}`}>
-        <h2 className="project-details-header">Project Details</h2>
-        <div className="each-project">
-          <img src={byte} alt="byte logo" className="project-image" />
-          <h2 className='project-name'>ByteonBlast</h2>
-          <p className='each-project-text'>Oversaw the rapid development of ByteonBlast from ideation to execution, 
-          culminating in a presale sell-out within two hours.</p>
-          <div className="each-projects-social">
-            <img src={twitter} alt="twitter icon" />
-            <img src={linkedin} alt="linkedin" />
-          </div>
-        </div>
-        <div className="each-project">
-          <img src={coinstore} alt="coinstore log" className="project-image" />
-          <h2 className='project-name'>Coinstore</h2>
-          <p className='each-project-text'>Oversaw the rapid development of ByteonBlast from ideation to execution, 
-          culminating in a presale sell-out within two hours.</p>
-          <div className="each-projects-social">
-            <img src={twitter} alt="twitter icon" />
-            <img src={linkedin} alt="linkedin" />
-          </div>
-        </div>
-        <div className="each-project">
-          <img src={cassava} alt="cassava log" className="project-image" />
-          <h2 className='project-name'>Cassava Network</h2>
-          <p className='each-project-text'>Oversaw the rapid development of ByteonBlast from ideation to execution, 
-          culminating in a presale sell-out within two hours.</p>
-          <div className="each-projects-social">
-            <img src={twitter} alt="twitter icon" />
-            <img src={linkedin} alt="linkedin" />
-          </div>
-        </div>
-        
-      </div>  
-      <button className='see-more' onClick={handleClick}>{isClicked ? 'See less': 'See more'}</button>
-
-      <div className="learn-crypto">
+    <section className='section' id='learn'>
+    <div className="learn-crypto">
         <h2 className="learn-header">Learn From the Best</h2>
         <div className="books">
-          <Link to={'./'}><img src={Book} alt="" className="book-photo" /></Link>
-          <Link to={'./'}><h3 className="book-title">Master Web3 With Easy Books <img src={Arrow} alt="" /></h3></Link>
+          <a href={"https://selar.co/m/dcryptgirlStore"}><img src={Book} alt="" className="book-photo" /></a>
+          <a href={"https://selar.co/m/dcryptgirlStore"}><h3 className="book-title">Master Web3 With Easy Books <img src={Arrow} alt="" /></h3></a>
         </div>
         <div className="youtube">
           <p className="encouragement">You might have tried a couple places or being to a couple tutorials but this is your one stop! join the team as we take 
@@ -164,7 +227,10 @@ export default function home() {
           <YoutubeEmbed embedId="_gxoP30TxHk" />
         </div>
 
-      </div>
+    </div>
+    </section>
+
+    <section className='section'>
         <div className="community-building">
           <h2 className="community-header">Community Building Initiatives</h2>
           <p className="community-text">
@@ -179,36 +245,36 @@ export default function home() {
         <div className="each-testimony">
           <div className="pic-name">
             <img src={CARLOS} alt="" className="testifyer-pic" />
-            <p className="testifiyer-name">Carlos Remirez</p>
+            <p className="testifiyer-name">Adebayo Johnson</p>
           </div>
-          <p className="testimony">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facere nisi odio recusandae quam.</p>
+          <p className="testimony">"Deborah's expertise in project management is unparalleled. Her ability to strategize and execute complex Web 3 projects with precision brought our vision to life. Her leadership is invaluable."</p>
         </div>
         <div className="each-testimony">
           <div className="pic-name">
-            <img src={CARLOS} alt="" className="testifyer-pic" />
-            <p className="testifiyer-name">Carlos Remirez</p>
+            <img src={EMILY} alt="" className="testifyer-pic" />
+            <p className="testifiyer-name"> Emily Hartman</p>
           </div>
-          <p className="testimony">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facere nisi odio recusandae quam.</p>
+          <p className="testimony"> "I've had the pleasure of working with Deborah on multiple blockchain initiatives. Her commitment to fostering community engagement and driving project success is second to none. A true leader!"</p>
         </div>
         <div className="each-testimony">
           <div className="pic-name">
-            <img src={CARLOS} alt="" className="testifyer-pic" />
-            <p className="testifiyer-name">Carlos Remirez</p>
+            <img src={Lady} alt="" className="testifyer-pic" />
+            <p className="testifiyer-name"> Sarah Nguyen</p>
           </div>
-          <p className="testimony">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facere nisi odio recusandae quam.</p>
+          <p className="testimony">"Deborah’s speeches are always captivating, insightful, and filled with practical knowledge. Her ability to break down complex blockchain topics into digestible content is impressive."</p>
         </div>
         <div className="each-testimony">
           <div className="pic-name">
-            <img src={CARLOS} alt="" className="testifyer-pic" />
-            <p className="testifiyer-name">Carlos Remirez</p>
+            <img src={Guy} alt="" className="testifyer-pic" />
+            <p className="testifiyer-name">Michael Levine </p>
           </div>
-          <p className="testimony">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facere nisi odio recusandae quam.</p>
+          <p className="testimony">"Working with Deb has been an absolute privilege. Her energy, expertise, and passion for building thriving communities make her an exceptional project manager."</p>
         </div>
        
       </div>
-
+    </section>
 
     <Footer/>
-    </div>
+  </div>
   )
 }
