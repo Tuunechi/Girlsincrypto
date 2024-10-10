@@ -12,6 +12,7 @@
   background-color: rgb(14, 14, 14); 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
   --primary-color:rgba(234, 234, 234, 1);

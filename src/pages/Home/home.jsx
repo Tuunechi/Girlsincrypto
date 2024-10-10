@@ -90,14 +90,14 @@ const handleLoadMore = ()=>{
       
       sections.forEach(section => {
         gsap.fromTo(section, 
-          { opacity: 0.05, y: 50 }, // Initial state before scrolling
+          { opacity: 0.05, y: 100 }, // Initial state before scrolling
           {
             opacity: 1,
             y: 0,  // State after the scroll
             scrollTrigger: {
               trigger: section,   // Trigger for each individual section
-              start: 'top 40%',   // Animation starts when top of section hits 80% of viewport
-              end: 'bottom 20%',  // Animation ends when bottom of the section hits 20% of viewport
+              start: 'top 60%',   // Animation starts when top of section hits 80% of viewport
+              end: 'bottom 25%',  // Animation ends when bottom of the section hits 20% of viewport
               scrub: 1,           // Smooth scrolling effect
               // markers: true,      // Show markers for debugging (remove later)
               toggleActions: "play none none none", // Only play once when section comes into view
@@ -224,11 +224,12 @@ const handleLoadMore = ()=>{
           <p className="encouragement">You might have tried a couple places or being to a couple tutorials but this is your one stop! join the team as we take 
             you on a ride to career and investment prowess!
           </p>
-          <YoutubeEmbed embedId="_gxoP30TxHk" />
+          <YoutubeEmbed embedId="_gxoP30TxHk"  />
         </div>
 
     </div>
     </section>
+   
 
     <section className='section'>
         <div className="community-building">

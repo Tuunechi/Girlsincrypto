@@ -44,13 +44,13 @@ a{
 }
 .identity{
     font-family: var(--primary-font);
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 100;
 }
 
 .profession{
-    font-size: 1.8rem;
-    line-height: 30px;
+    font-size: 2.1rem;
+    line-height: 40px;
 }
 
 .hero-image-group{
@@ -62,7 +62,7 @@ a{
 }
 
 .hero-image{
-    width: 75%;
+    width: 70%;
 }
 
 .contact-me-btn {
@@ -105,7 +105,6 @@ a{
 .about-paragraph, .project-overview-text, .roles-paragraph, .each-project-text, .community-text-and-pic, .encouragement{
     font-size: 1rem;
     font-weight: 350;
-    opacity: .85;
 }
 
 
@@ -136,8 +135,11 @@ a{
     padding: 2.5% 5%;
     margin-left: 2%;
     margin-top: 2%;
-    opacity: .7;
 
+}
+
+.load-more-pics a{
+    color: whitesmoke;
 }
 
 
@@ -191,7 +193,7 @@ a{
 .projects{
     display: flex;
     overflow: hidden;
-    /* mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%); */
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%);
 }
 
 
@@ -217,7 +219,7 @@ a{
 .learn-crypto{
     width: 100%;
     margin-left: auto;
-    margin-top: 20%;
+    margin-top: 10%;
     font-family: var(--primary-font);
 }
 
@@ -281,7 +283,7 @@ a{
     width: 98%;
     margin-left: auto;
     display: flex;
-    overflow-x: hidden;
+    overflow-x: scroll;
     margin-top: 15%;
 }
 
@@ -303,4 +305,320 @@ a{
     /* margin-left:5% ; */
     margin-right: 14%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+@media screen and (min-width:600px) {
+    .home-container{
+        overflow: hidden;
+        width: 100vw;
+        position: relative;
+    }
+
+    .identity{
+        font-size: 1.2rem;
+    }
+
+    .profession{
+        font-size: 2.1rem;
+    }
+
+    .contact-me-btn{
+        font-size: 1.2rem;
+    }
+
+
+    .about-header, .project-overview-header, .project-overview-header-design, .roles-header, .project-name, .community-header, .proofs-header, .learn-header, .youtube-header {
+        font-size: 1.85rem;
+    }    
+
+
+    .about-paragraph, .project-overview-text, .roles-paragraph, .each-project-text, .community-text-and-pic, .encouragement{
+        font-size: 1.3rem;
+    }
+
+    .curly{
+        width: 80%;
+    }
+
+    .load-more-pics{
+        margin-top: 5%;
+        font-size: 1rem;
+        opacity: .9;
+
+    }
+
+    .youtube{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+}
+
+@media screen and (min-width: 700px) {
+
+    .home-container{
+        position: relative;
+    }
+
+    .identity{
+        font-size: 1.4rem;
+    }
+    .profession{
+        font-size: 2.7rem;
+        line-height: 49px;
+    }
+
+    .heart{
+        position: absolute;
+        right: 45%;
+        bottom: 58%;
+    }
+
+    /* .hero-image{
+        width: 65%;
+    } */
+
+    .about-header, .project-overview-header, .project-overview-header-design, .roles-header, .project-name, .community-header, .proofs-header, .learn-header, .youtube-header {
+        font-size: 2.1rem;
+    }   
+
+
+
+    .about-paragraph, .project-overview-text, .roles-paragraph, .each-project-text, .community-text-and-pic, .encouragement, .community-text{
+        font-size: 1.4rem;
+    }
+
+    .about-social-links img{
+        width: 180%;
+    }
+
+    .load-more-pics a{
+        color: whitesmoke;
+        font-size: 1.5rem;
+    }
+
+    .images img{
+        height: 300px;
+    }
+
+
+    .testimony, .testifiyer-name{
+        font-size: 1.3rem;
+    }
+
+}
+
+
+@media screen and (min-width:1000px) {
+    .home-container{
+        width: 98vw;
+    }
+
+    .hero{
+        width: 85%;
+        margin-right: auto;
+    }
+
+    .hero-image-group{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .hero-image{
+        width: 54%;
+        margin-top: -10%;
+    }
+
+    .profession{
+        font-size: 3.8rem;
+        line-height: 65px;
+    }
+
+    .heart{
+        /* width: 30vw; */
+        height: 8vh;
+        bottom: 40%;
+        left: 30%;
+    }
+
+    .contact-me-btn{
+        margin-bottom: 5vh;
+    }
+
+    .about-section, .images, .roles-and-responsibilities{
+        width: 85%;
+        margin-left: auto;
+
+    }
+    .community-building{
+        width: 94%;
+        margin-left: auto;
+    }
+
+
+
+    .about-header, .project-overview-header, .project-overview-header-design, .roles-header, .project-name, .community-header, .proofs-header, .learn-header, .youtube-header {
+        font-size: 2.2rem;
+    }    
+
+    .curly{
+        width: 60%;
+        margin-top: -8%;
+    }
+
+    .about-paragraph, .encouragement .project-overview-text, .roles-paragraph, .each-project-text, .community-text-and-pic, .encouragement{
+        font-size: 1.4rem;
+    }
+
+    .load-more-pics, .learn-header{
+        margin-left: 7%;
+    }
+
+    .book-title{
+        padding: 0;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .home-container{
+        width: 98vw;
+    }
+
+    .hero{
+        width: 85%;
+        margin-right: auto;
+    }
+
+    .hero-image-group{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .hero-image{
+        width: 47%;
+        margin-top: -11%;
+    }
+
+    .profession{
+        font-size: 5rem;
+        line-height: 100px;
+    }
+
+    .heart{
+        /* width: 30vw; */
+        height: 8vh;
+        bottom: 40%;
+        left: 55%;
+    }
+
+    .contact-me-btn{
+        margin-bottom: 5vh;
+        float: left;
+        /* display: none; */
+        width: 20%;
+        margin-left: 8%;
+        margin-top: -5%;
+
+    }
+
+    .about-section, .images, .roles-and-responsibilities{
+        width: 85%;
+        margin-left: auto;
+
+    }
+    .community-building{
+        width: 94%;
+        margin-left: auto;
+    }
+
+
+
+    .about-header, .project-overview-header, .project-overview-header-design, .roles-header, .project-name, .community-header, .proofs-header, .learn-header, .youtube-header {
+        font-size: 2.2rem;
+    }    
+
+    .curly{
+        width: 70%;
+        height: 17vh;
+    }
+
+    .about-paragraph, .encouragement .project-overview-text, .roles-paragraph, .each-project-text, .community-text-and-pic, .encouragement{
+        font-size: 1.4rem;
+        
+    }
+
+    .about-paragraph, .roles-paragraph{
+        margin-bottom: 7%;
+    }
+
+    .project-details{
+        width: 85%;
+    }
+
+    .projects img {
+        width: 11%;
+    }
+
+    .load-more-pics, .learn-header{
+        margin-left: 7%;
+    }
+
+    .book-title{
+        padding: 0;
+    }
+
+    .load-more-pics{
+        padding: 1% 6%; 
+    }
+
+    .learn-crypto{
+        margin-top: 2%;
+    }
+
+    .youtube{
+        width: 85%;
+    }
+
+
+    .book-photo{
+        width: 50%;
+        margin-left: 25%;
+        display: flex;
+    }
+
+    .book-photo:hover{
+        width: 51%;
+    }
+
+    .book-title{
+        margin-top: 1%;
+    }
+
+    .book-title img{
+        width: 1%;
+    }
+
+
+
+    .books{
+        margin-bottom: -6%;
+    }
+
+    .testimony{
+        width: 85%;
+    }
+    .testimonies{
+        margin-top: 8%;
+        width: 95%;
+    }
+
+    .each-testimony{
+        min-width: 40%;
+        padding: 2% 1% 2% 2%;
+    }
 }

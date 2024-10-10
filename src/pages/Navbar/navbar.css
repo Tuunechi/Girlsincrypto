@@ -26,7 +26,7 @@
 }
 
 .top{
-    height: .4vh;
+    height: .6vh;
     background-color: #BD1B7F;
     margin-bottom: .5vh;
 }
@@ -44,7 +44,7 @@
     align-items: center;
     width: 90vw;
     position: absolute;
-    height: 35vh;
+    height: 50vh;
     top: 5vh;
     /* margin-left:-20px ; */
     font-family: var(--primary-font);
@@ -126,4 +126,50 @@
 
 .nav-contact-link{
     display: none;
+}
+
+
+@media screen and (min-width: 540px) {
+    .hamburger{
+        width: 14%;
+ }
+
+    .top{
+        height: .7vh;
+    }
+
+
+}
+
+@media screen and (min-width: 600px){
+    .logo{
+        font-size: 1.6rem;
+    }
+
+
+}
+
+
+@media screen and (min-width:1000px) {
+    .navbar{
+        width: 85%;
+    }
+
+    .hamburger{
+        width: 8%;
+    }
+
+    .bottom{
+        height: .7vh;
+    }
+
+    .nav-links-and-socials{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .logo{
+        font-size: 1.3rem;
+    }
 }

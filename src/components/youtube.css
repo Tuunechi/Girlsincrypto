@@ -13,9 +13,16 @@
   position: absolute;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
     .video-responsive {
       max-width: 98%; /* Ensures it doesn't exceed the screen width */
       padding-bottom: 70%; /* Adjust aspect ratio to 4:3 for smaller screens if desired */
+    }
+  }
+
+
+  @media  screen and (min-width:1200px) {
+    .video-responsive{
+      padding-bottom: 40%;
     }
   }
