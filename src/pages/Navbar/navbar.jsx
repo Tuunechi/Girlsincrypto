@@ -37,6 +37,7 @@ export default function navbar() {
                 <a className='nav-link' href='#learn'>Learn</a>
                 <a href='#about' className='nav-link'>Project</a>
                 <Link to={'./contact'} className='nav-link'>Contact</Link>
+                <Link to={'https://selar.co/qiv320'} className='nav-link' id='mentor'>Mentorship</Link>
               </div>
               <div className="nav-socials">
                <a href={'https://www.instagram.com/dcryptgirl?igsh=cndnM3owaGNzc3V2'}><img src={Instagram} className='nav-social' alt="contact"/></a>

@@ -8,6 +8,7 @@ import Twitter from './images/x.svg'
 import Tiktok from './images/tiktok.svg'
 import instagram from './images/instagram.svg'
 import { Link } from 'react-router-dom'
+import Whatsapp from './images/whatsapp.svg'
 
 
 export default function Footer() {
@@ -18,7 +19,7 @@ export default function Footer() {
             <div className="contact-footer">
               <div className="contact-me-group">
                 <h2 className="contact-us-header">Contact Us</h2>
-                <p className="mobile-footer"><img src={Phone} alt="phone ichromcon" className="mobile-icon" /> +2348154154475</p>
+                <p className="mobile-footer"><img src={Whatsapp} alt="whatsapp" className="mobile-icon" /> +2348154154475</p>
                 <p className="mail-footer"><img src={Mail} alt="phone icon" className="mail-icon" /> Contact@dcryptgirl.com</p>
               </div>  
               <div className="subscribe">

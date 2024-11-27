@@ -505,14 +505,14 @@ a{
     }
 
     .profession{
-        font-size: 5rem;
-        line-height: 100px;
+        font-size: 3.6rem;
+        line-height: 70px;
     }
 
     .heart{
         /* width: 30vw; */
         height: 8vh;
-        bottom: 40%;
+        bottom: 30%;
         left: 55%;
     }
 

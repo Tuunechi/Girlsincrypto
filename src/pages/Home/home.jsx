@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../Navbar/navbar'
 import background from './images/background.svg'
 import heart from './images/heart-group.svg'
-import hero from './images/hero-image.svg'
+import hero from './images/hero.svg'
 import '../../reset.css'
 import './home.css'
 import { Link } from 'react-router-dom'
@@ -40,10 +40,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 
 
+
+export const metadata = {
+  title: "Dcryptgirl",
+  description: "Public speaker and Community Builder",
+};
+
 gsap.registerPlugin(ScrollTrigger);
-
-
-
 
 
 export default function home() {
@@ -146,7 +149,7 @@ const handleLoadMore = ()=>{
         <div className="hero">
             <div className="hero-text-group">
               <h5 className='identity'>I am Deborah, a</h5>
-              <h2 className='profession'>Project Manager <br/> & Speaker</h2>
+              <h2 className='profession'>Project Manager, <br/>Community Builder <br/> & Public Speaker</h2>
             </div>
             <div className="hero-image-group">
                 <img src={heart} alt="heart" className='heart'/>
@@ -218,13 +221,13 @@ const handleLoadMore = ()=>{
         <h2 className="learn-header">Learn From the Best</h2>
         <div className="books">
           <a href={"https://selar.co/m/dcryptgirlStore"}><img src={Book} alt="" className="book-photo" /></a>
-          <a href={"https://selar.co/m/dcryptgirlStore"}><h3 className="book-title">Master Web3 With Easy Books <img src={Arrow} alt="" /></h3></a>
+          <a href={"https://selar.co/m/dcryptgirlStore"}><h3 className="book-title">Master Web3 With Easy Books For Free <img src={Arrow} alt="" /></h3></a>
         </div>
         <div className="youtube">
           <p className="encouragement">You might have tried a couple places or being to a couple tutorials but this is your one stop! join the team as we take 
             you on a ride to career and investment prowess!
           </p>
-          <YoutubeEmbed embedId="_gxoP30TxHk"  />
+          <YoutubeEmbed embedId="q47i6u3eX8w"  />
         </div>
 
     </div>
