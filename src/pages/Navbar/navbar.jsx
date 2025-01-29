@@ -36,7 +36,7 @@ export default function navbar() {
                 <Link to={'/'} className='nav-link'>Home</Link>
                 <a className='nav-link' href='#learn'>Learn</a>
                 <a href='#about' className='nav-link'>Project</a>
-                <Link to={'./contact'} className='nav-link'>Contact</Link>
+                {/* <Link to={'./contact'} className='nav-link'>Contact</Link> */}
                 <Link to={'https://selar.co/qiv320'} className='nav-link' id='mentor'>Mentorship</Link>
               </div>
               <div className="nav-socials">

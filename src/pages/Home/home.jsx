@@ -51,7 +51,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function home() {
 
-  const [higherLimit, setHigherLimit] = useState(5)   
+  const [higherLimit, setHigherLimit] = useState(2)   
   const [lowerLimit, setLowerLimit] = useState(0)   
 
 
@@ -206,15 +206,15 @@ const handleLoadMore = ()=>{
       {/* <button className='see-more' onClick={handleClick}>{isClicked ? 'See less': 'See more'}</button> */}
     </section>
 
-    <section>
+    {/* <section>
     <div className="image-proofs">
-      {/* <h2 className='proofs-header'>For Your Eyes</h2> */}
+      // <h2 className='proofs-header'>For Your Eyes</h2>
       <div className='images'>
       {refinedImages}
       </div>
       <button className="load-more-pics" onClick={handleLoadMore}>Load More </button>
     </div>
-    </section>
+    </section> */}
 
     <section className='section' id='learn'>
     <div className="learn-crypto">

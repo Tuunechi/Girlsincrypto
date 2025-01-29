@@ -19,8 +19,8 @@ export default function Footer() {
             <div className="contact-footer">
               <div className="contact-me-group">
                 <h2 className="contact-us-header">Contact Us</h2>
-                <p className="mobile-footer"><img src={Whatsapp} alt="whatsapp" className="mobile-icon" /> +2348154154475</p>
-                <p className="mail-footer"><img src={Mail} alt="phone icon" className="mail-icon" /> Contact@dcryptgirl.com</p>
+                {/* <p className="mobile-footer"><img src={Whatsapp} alt="whatsapp" className="mobile-icon" /> +2348154154475</p> */}
+                <p className="mail-footer"><img src={Mail} alt="phone icon" className="mail-icon" /> Contact@dcryptgirl.xyz</p>
               </div>  
               <div className="subscribe">
                 <h2 className="subscribe-header">Subscribe for more infomation</h2>
