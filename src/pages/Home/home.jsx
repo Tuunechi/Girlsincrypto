@@ -36,6 +36,7 @@ import despace from './images/despace.svg'
 import Gallery from '../Gallery/Gallery.jsx'
 import { images } from '../Gallery/Gallery.jsx'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import deb from './images/deb3.png'
 
 
 
@@ -93,13 +94,13 @@ const handleLoadMore = ()=>{
       
       sections.forEach(section => {
         gsap.fromTo(section, 
-          { opacity: 0.05, y: 100 }, // Initial state before scrolling
+          { opacity: 1, y: 80 }, // Initial state before scrolling
           {
             opacity: 1,
             y: 0,  // State after the scroll
             scrollTrigger: {
               trigger: section,   // Trigger for each individual section
-              start: 'top 60%',   // Animation starts when top of section hits 80% of viewport
+              start: 'top 80%',   // Animation starts when top of section hits 80% of viewport
               end: 'bottom 25%',  // Animation ends when bottom of the section hits 20% of viewport
               scrub: 1,           // Smooth scrolling effect
               // markers: true,      // Show markers for debugging (remove later)
@@ -109,37 +110,6 @@ const handleLoadMore = ()=>{
       });
     });
 
-    // useGSAP(()=>{
-    //   gsap.fromTo(".curly", {scaleX:0.5}, {scaleX:1})
-    // })
-
-  
-
-  // const [isClicked, setIsClicked] = useState(false)
-
-  // const handleClick = ()=>{
-  //   setIsClicked(!isClicked)
-  //   console.log(isClicked);
-  // }
-
-
-  // useEffect(()=>{
-  //   const elements = document.querySelectorAll('.each-project')
-  // console.log(elements)
-
-    // const ids  = elements.length - 1
-  //   if (isClicked){
-  //       elements.forEach((element, index) => {
-  //         element.style.display = "block";
-  //   });
-  // }else{
-  //   elements.forEach((element,index) =>{
-  //     if(index >= 2)
-  //     element.style.display = "none";
-  //   })
-  // }
-  // } ,[isClicked])
-  
   
   
   return (
@@ -148,19 +118,19 @@ const handleLoadMore = ()=>{
         <Navbar/>
         <div className="hero">
             <div className="hero-text-group">
-              <h5 className='identity'>I am Deborah, a</h5>
-              <h2 className='profession'>Project Manager, <br/>Community Builder <br/> & Public Speaker</h2>
+              <h5 className='identity'>Join Dcryptgirl and the girls in GirlsInCryptoClub!</h5>
+              <h2 className='profession'>Learn How to Start your <span className='span'>journey towards an active income</span> in the crypto market - even if you're a beginner!</h2>
             </div>
-            <div className="hero-image-group">
-                <img src={heart} alt="heart" className='heart'/>
-                <img className='hero-image' src={hero} alt="hero image" />
-            </div>
+            <a href={'https://calendly.com/dcryptgirl/30min'}><button className='contact-me-btn'>Get Access!</button></a>
         </div>
-        <a href={'https://calendly.com/dcryptgirl/30min'}><button className='contact-me-btn'>Book a Call</button></a>
+        <div className="hero-image-group">
+          <img src={heart} alt="heart" className='heart'/>
+          <img className='hero-image' src={deb} alt="hero image" />
+      </div>
     </div>
     <section className='section'>
     <div className="about-section">
-      <h2 className="about-header">About Me</h2>
+      {/* <h2 className="about-header">About Me</h2> */}
       <p className="about-paragraph">
       I’m Deborah, a Web 3 project manager and community builder with three years of experience
        in the blockchain space. I’ve worked with projects like DeSpace Protocol, Coinstore, Dojima Network, ByteonBlast, 
@@ -223,13 +193,6 @@ const handleLoadMore = ()=>{
           <a href={"https://selar.co/m/dcryptgirlStore"}><img src={Book} alt="" className="book-photo" /></a>
           <a href={"https://selar.co/m/dcryptgirlStore"}><h3 className="book-title">Master Web3 With Easy Books For Free <img src={Arrow} alt="" /></h3></a>
         </div>
-        <div className="youtube">
-          <p className="encouragement">You might have tried a couple places or being to a couple tutorials but this is your one stop! join the team as we take 
-            you on a ride to career and investment prowess!
-          </p>
-          <YoutubeEmbed embedId="q47i6u3eX8w"  />
-        </div>
-
     </div>
     </section>
    
@@ -245,7 +208,7 @@ const handleLoadMore = ()=>{
           </p>
         </div>
 
-        <div className="testimonies">
+        {/* <div className="testimonies">
         <div className="each-testimony">
           <div className="pic-name">
             <img src={CARLOS} alt="" className="testifyer-pic" />
@@ -255,7 +218,6 @@ const handleLoadMore = ()=>{
         </div>
         <div className="each-testimony">
           <div className="pic-name">
-            <img src={EMILY} alt="" className="testifyer-pic" />
             <p className="testifiyer-name"> Emily Hartman</p>
           </div>
           <p className="testimony"> "I've had the pleasure of working with Deborah on multiple blockchain initiatives. Her commitment to fostering community engagement and driving project success is second to none. A true leader!"</p>
@@ -275,7 +237,7 @@ const handleLoadMore = ()=>{
           <p className="testimony">"Working with Deb has been an absolute privilege. Her energy, expertise, and passion for building thriving communities make her an exceptional project manager."</p>
         </div>
        
-      </div>
+      </div> */}
     </section>
 
     <Footer/>

@@ -31,7 +31,7 @@ a{
 .contact-us-header, .subscribe-header{
     color: #BD1B7F;
     font-size: 1.2rem;
-    margin-top: 7vh;
+    margin-top: 4vh;
     margin-bottom: 1vh;
     
 }
@@ -39,6 +39,7 @@ a{
 .mobile-footer, .mail-footer{
     font-size:.9rem ;
     font-weight: 350;
+    display: flex;
 }
 
 

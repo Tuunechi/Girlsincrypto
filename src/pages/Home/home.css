@@ -22,18 +22,17 @@ a{
     color: whitesmoke;
 }
 
-.heart{
-    width: 15vw;
-    height: 6vh;
-    margin-top: 4rem;
-    margin-left: -20%;
-    object-fit: contain;
+.span{
+    color: var(--accent-color);
 }
 
+
+
 .hero{
-    margin-top: 15vh;
+    margin-top: 10vh;
     margin-left: auto;
-    width: 96%;
+    margin-right: auto;
+    width: 90%;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -41,6 +40,7 @@ a{
 
 .hero-text-group{
     margin-bottom: -2vh;
+    text-align: center;
 }
 .identity{
     font-family: var(--primary-font);
@@ -51,23 +51,35 @@ a{
 .profession{
     font-size: 2.1rem;
     line-height: 40px;
+
 }
 
 .hero-image-group{
-    width: 120%;
+    width: 100%;
     display: flex;
     /* margin-left: 12vw; */
-    margin-left: -10%;
+    margin-left: -10%; 
+    position: relative;
     justify-content: flex-end;
 }
 
+.heart{
+    width: 15vw;
+    height: 6vh;
+    margin-top: 4rem;
+    /* margin-left: -50%; */
+    object-fit: contain;
+    position: absolute;
+    right: 2%;
+}
+
 .hero-image{
-    width: 70%;
+    width: 100%;
 }
 
 .contact-me-btn {
     margin: 8vh auto 0 auto; 
-    width: 50%;
+    width: 70%;
     border-radius: 10px;
     border: none;
     background-color: #BD1B7F;
@@ -75,7 +87,8 @@ a{
     cursor: pointer;
     display: flex;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
     color: whitesmoke;
 }
 
@@ -85,7 +98,7 @@ a{
 
 .about-section{
     width: 95%;
-    margin: 7vh auto 0 auto;
+    margin:-8vh auto 0 auto;
     font-family: var(--primary-font);
 }
 
@@ -111,10 +124,7 @@ a{
 
 .images{
     width: 95%;
-    /* height: auto; */
     margin: 7% auto 0 auto;
-    /* background-color: #BD1B7F; */
-    /* overflow: hidden; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -362,6 +372,10 @@ a{
 
     .home-container{
         position: relative;
+    }
+
+    .hero-text-group{
+        width: 55%;
     }
 
     .identity{
