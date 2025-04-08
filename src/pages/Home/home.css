@@ -97,7 +97,7 @@ a{
 }
 
 .about-section{
-    width: 95%;
+    width: 90%;
     margin:-8vh auto 0 auto;
     font-family: var(--primary-font);
 }
@@ -107,10 +107,10 @@ a{
     margin-left: auto;
     font-family: var(--primary-font);
     margin: 5vh auto 0 auto;
-    width: 95%;
+    width: 90%;
 }
 
-.about-header, .project-overview-header, .project-overview-header-design, .roles-header, .project-name, .community-header, .proofs-header, .learn-header, .youtube-header{
+.about-header, .project-overview-header, .project-overview-header-design, .roles-header, .project-name, .community-header, .proofs-header, .youtube-header{
     line-height: 28px;
     margin-bottom: 1.5vh;     
 }
@@ -224,7 +224,15 @@ a{
 .pic-name p{
     font-weight: 400;
 }
+.learn-header{
+    text-align: center;
+    margin-left: auto;
+    font-size: 1.3rem;
+}
 
+.check-out{
+    margin-top: -1vh;
+}
 
 .learn-crypto{
     width: 100%;
@@ -233,12 +241,16 @@ a{
     font-family: var(--primary-font);
 }
 
-.learn-header, .proofs-header{
+.proofs-header{
     width: 98%;
     margin-left: auto;
 }
 
 .book-title{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -8vh;
     text-align: center;
     padding-bottom: 5%;
     padding-top: 2%;
@@ -248,9 +260,6 @@ a{
     font-size: larger;
 }
 
-.book-title img{
-    width: 4%;
-}
 .books{
     font-family: var(--primary-font);
     background: linear-gradient(to bottom, rgba(29, 28, 28, 0) 0%, rgb(38, 38, 38) 60%, rgba(189, 27, 127, 0.157) 80%, rgba(29, 28, 28, 0));

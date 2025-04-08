@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../Navbar/navbar'
-import background from './images/background.svg'
 import heart from './images/heart-group.svg'
-import hero from './images/hero.svg'
 import '../../reset.css'
 import './home.css'
 import { Link } from 'react-router-dom'
@@ -10,20 +8,11 @@ import instagram from './images/instagram.svg'
 import tiktok from './images/tiktok.svg'
 import twitter from './images/tiktok.svg'
 import curly from './images/curly.svg'
-import doubleCurly from './images/double-curly.svg'
 import coinstore from './images/coinstore.svg'
 import linkedin from './images/Linkedin.svg'
-import byte from './images/byte.svg'
 import cassava from './images/cassava.svg'
-import community from './images/community.png'
 import Footer from '../Footer/footer'
-import CARLOS from './images/Carlos-Remirez.jpg'
-import EMILY from './images/Aisha-Khan.jpg'
-import Lady from './images/Ananya-Patel.jpg'
-import Guy from './images/Lars-Johansson.jpg'
-import Guy2 from './images/John-Smith.jpg'
-import Lady2 from './images/Li-Wei.jpg'
-import Book from './images/book.png'
+import Book from './images/book-group.png'
 import Arrow from './images/Arrow.svg'
 import YoutubeEmbed from '../../components/YoutubeEmbed'
 import {gsap, Linear} from 'gsap'
@@ -33,8 +22,8 @@ import dojima from './images/dojima.svg'
 import nft from './images/nft.svg'
 import despace from './images/despace.svg'
 // import images from '../Gallery/Gallery.js'
-import Gallery from '../Gallery/Gallery.jsx'
-import { images } from '../Gallery/Gallery.jsx'
+// import Gallery from '../Gallery/Gallery.jsx'
+// import { images } from '../Gallery/Gallery.jsx'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import deb from './images/deb3.png'
 
@@ -52,27 +41,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function home() {
 
-  const [higherLimit, setHigherLimit] = useState(2)   
-  const [lowerLimit, setLowerLimit] = useState(0)   
+  // const [higherLimit, setHigherLimit] = useState(2)   
+  // const [lowerLimit, setLowerLimit] = useState(0)   
 
 
-
-const refinedImages = images.filter((_, index) => index >= lowerLimit && index <= higherLimit)
-.map((image, index)=>{
-  return <div className='pictorial-proof'><img key={index} className="refinedImages" src={image}/></div>
-})
-
-const imageIndex = images.length - 1
-
-const handleLoadMore = ()=>{
-  if(higherLimit >= imageIndex && lowerLimit >= imageIndex - 5){
-    setHigherLimit(5)
-    setLowerLimit(0)
-  }else{
-    setHigherLimit(prevLimit => prevLimit + 5)
-    setLowerLimit(prevLimit => prevLimit + 5)
-  }
-}
 
   
   useGSAP(()=>{
@@ -191,7 +163,8 @@ const handleLoadMore = ()=>{
         <h2 className="learn-header">Learn From the Best</h2>
         <div className="books">
           <a href={"https://selar.co/m/dcryptgirlStore"}><img src={Book} alt="" className="book-photo" /></a>
-          <a href={"https://selar.co/m/dcryptgirlStore"}><h3 className="book-title">Master Web3 With Easy Books For Free <img src={Arrow} alt="" /></h3></a>
+          <a href={"https://selar.co/m/dcryptgirlStore"}><h3 className="book-title">Master Web3 With Easy Books, materials, community, Dcryptgirl and other prominent and professionals in the space</h3></a>
+          <a href={'https://calendly.com/dcryptgirl/30min'}><button className='contact-me-btn check-out'>Get Access!</button></a>
         </div>
     </div>
     </section>
@@ -207,37 +180,6 @@ const handleLoadMore = ()=>{
            I’ve consistently endeavored to cultivate thriving communities that serve as the bedrock of project success
           </p>
         </div>
-
-        {/* <div className="testimonies">
-        <div className="each-testimony">
-          <div className="pic-name">
-            <img src={CARLOS} alt="" className="testifyer-pic" />
-            <p className="testifiyer-name">Adebayo Johnson</p>
-          </div>
-          <p className="testimony">"Deborah's expertise in project management is unparalleled. Her ability to strategize and execute complex Web 3 projects with precision brought our vision to life. Her leadership is invaluable."</p>
-        </div>
-        <div className="each-testimony">
-          <div className="pic-name">
-            <p className="testifiyer-name"> Emily Hartman</p>
-          </div>
-          <p className="testimony"> "I've had the pleasure of working with Deborah on multiple blockchain initiatives. Her commitment to fostering community engagement and driving project success is second to none. A true leader!"</p>
-        </div>
-        <div className="each-testimony">
-          <div className="pic-name">
-            <img src={Lady} alt="" className="testifyer-pic" />
-            <p className="testifiyer-name"> Sarah Nguyen</p>
-          </div>
-          <p className="testimony">"Deborah’s speeches are always captivating, insightful, and filled with practical knowledge. Her ability to break down complex blockchain topics into digestible content is impressive."</p>
-        </div>
-        <div className="each-testimony">
-          <div className="pic-name">
-            <img src={Guy} alt="" className="testifyer-pic" />
-            <p className="testifiyer-name">Michael Levine </p>
-          </div>
-          <p className="testimony">"Working with Deb has been an absolute privilege. Her energy, expertise, and passion for building thriving communities make her an exceptional project manager."</p>
-        </div>
-       
-      </div> */}
     </section>
 
     <Footer/>
