@@ -3,7 +3,8 @@ a{
 }
 
 .footer-cover{
-    background-color: #1C1C1C;
+    color: whitesmoke;
+    background-color: #BD1B7F;
     font-family: var(--primary-font);
 }
 
@@ -29,7 +30,7 @@ a{
 }
 
 .contact-us-header, .subscribe-header{
-    color: #BD1B7F;
+    color: #ffffff;
     font-size: 1.2rem;
     margin-top: 4vh;
     margin-bottom: 1vh;
@@ -65,7 +66,7 @@ a{
 }
 
 .subscribe-button{
-    background-color: #BD1B7F;
+    background-color: #333333;
     border: none;
     border-radius: 8px;
     padding: 1.5vh 1.5vw 1.5vh 1.5vw;

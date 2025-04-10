@@ -45,7 +45,7 @@ a{
 .identity{
     font-family: var(--primary-font);
     font-size: 1.1rem;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .profession{
@@ -74,7 +74,7 @@ a{
 }
 
 .hero-image{
-    width: 100%;
+    width: 105%;
 }
 
 .contact-me-btn {
@@ -96,7 +96,14 @@ a{
     color: whitesmoke;
 }
 
+.section{
+    width: 100%;
+    background-color: #fcfdf2;
+    color: #333333;
+}
+
 .about-section{
+    padding-top: 2vh;
     width: 90%;
     margin:-8vh auto 0 auto;
     font-family: var(--primary-font);
@@ -299,33 +306,6 @@ a{
 }
 
 
-.testimonies{
-    width: 98%;
-    margin-left: auto;
-    display: flex;
-    overflow-x: scroll;
-    margin-top: 15%;
-}
-
-.testimonies img{
-    border-radius: 50%;
-    width: 15%;
-}
-
-
-.each-testimony{
-    min-width: 80%;
-    font-family: var(--primary-font);
-    font-weight: 200;
-    font-size: 14px;
-    background-color: #1C1C1C;
-    border: 2px solid #1C1C1C;
-    border-radius: 10px;
-    padding: 5% 1% 5% 3%;
-    /* margin-left:5% ; */
-    margin-right: 14%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
 
 
 @media screen and (min-width:600px) {

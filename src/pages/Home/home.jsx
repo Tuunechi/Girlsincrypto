@@ -90,7 +90,7 @@ export default function home() {
         <Navbar/>
         <div className="hero">
             <div className="hero-text-group">
-              <h5 className='identity'>Join Dcryptgirl and the girls in GirlsInCryptoClub!</h5>
+              <h5 className='identity'>Join the girls in GirlsInCryptoClub!</h5>
               <h2 className='profession'>Learn How to Start your <span className='span'>journey towards an active income</span> in the crypto market - even if you're a beginner!</h2>
             </div>
             <a href={'https://calendly.com/dcryptgirl/30min'}><button className='contact-me-btn'>Get Access!</button></a>
@@ -130,7 +130,7 @@ export default function home() {
     <div className="project-details">
         <h2 className="project-details-header">Trusted By</h2>
 
-        <div className="projects">
+        {/* <div className="projects">
           <img src={coinstore} alt="coinstore log" className="project-image coinstore" />
           <img src={kwikpik} alt="byte logo" className="project-image kwikpik" />
           <img src={cassava} alt="cassava log" className="project-image cassava" />
@@ -143,7 +143,7 @@ export default function home() {
           <img src={dojima} alt="dojima logo" className="project-image dojima" />
           <img src={nft} alt="nft log" className="project-image nft" />
           <img src={despace} alt="nft log" className="project-image despace" />
-        </div>  
+        </div>   */}
     </div>  
       {/* <button className='see-more' onClick={handleClick}>{isClicked ? 'See less': 'See more'}</button> */}
     </section>

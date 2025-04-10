@@ -8,15 +8,15 @@
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-  color: rgba(234, 234, 234, 1);
-  background-color: rgb(14, 14, 14); 
+  color: #333333;
+  background-color: #fcfdf2; 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
   --primary-color:rgba(234, 234, 234, 1);
-  --accent-color:rgba(189, 27, 127, 1);
+  --accent-color:#F2419C;
   --primary-font: 'Montserrat', sans-serif;
   --secondary-font: 'nunito sans', sans-serif;
 }
