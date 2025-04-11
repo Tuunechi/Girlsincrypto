@@ -44,12 +44,12 @@ a{
 }
 .identity{
     font-family: var(--primary-font);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
 .profession{
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     line-height: 40px;
 
 }
@@ -125,13 +125,13 @@ a{
 }
 
 .roles-and-responsibilities{
-    height: 95vh;
-    margin-top: 7vh;
+    padding-top: 7vh;
     margin-left: auto;
     font-family: var(--primary-font);
     margin: 5vh auto 0 auto;
     width: 100%;
     background-color: #0b0b0b;
+    padding-bottom: 10vh;
 }
 
 
@@ -210,10 +210,8 @@ a{
 
 .project-details{
     margin: 2vh auto 0 auto;
-    width: 95%;
+    width: 90%;
     font-family: var(--primary-font);
-    position: relative;
-    display: flex;
 }
 
 
