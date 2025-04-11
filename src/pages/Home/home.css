@@ -74,7 +74,7 @@ a{
 }
 
 .hero-image{
-    width: 105%;
+    width: 100%;
 }
 
 .contact-me-btn {
@@ -82,7 +82,7 @@ a{
     width: 70%;
     border-radius: 10px;
     border: none;
-    background-color: #BD1B7F;
+    background-color: #F2419C;
     padding: 1.5vh 4vw;
     cursor: pointer;
     display: flex;
@@ -103,26 +103,50 @@ a{
 }
 
 .about-section{
-    padding-top: 2vh;
+    padding-top: 3vh;
     width: 90%;
-    margin:-8vh auto 0 auto;
+    margin:-9vh auto 0 auto;
     font-family: var(--primary-font);
+
 }
 
-.roles-and-responsibilities{
-    margin-top: 7vh;
-    margin-left: auto;
-    font-family: var(--primary-font);
-    margin: 5vh auto 0 auto;
-    width: 90%;
-}
 
 .about-header, .project-overview-header, .project-overview-header-design, .roles-header, .project-name, .community-header, .proofs-header, .youtube-header{
     line-height: 28px;
     margin-bottom: 1.5vh;     
 }
 
-.about-paragraph, .project-overview-text, .roles-paragraph, .each-project-text, .community-text-and-pic, .encouragement{
+
+.about-paragraph{
+    font-size: 1.4rem;
+    text-align: center;
+    color: #F2419C;
+    font-weight:700 ;
+}
+
+.roles-and-responsibilities{
+    height: 95vh;
+    margin-top: 7vh;
+    margin-left: auto;
+    font-family: var(--primary-font);
+    margin: 5vh auto 0 auto;
+    width: 100%;
+    background-color: #0b0b0b;
+}
+
+
+
+.roles-paragraph{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3vh;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fcfdf2;
+}
+
+.project-overview-text, .each-project-text, .community-text-and-pic, .encouragement{
     font-size: 1rem;
     font-weight: 350;
 }
@@ -301,8 +325,9 @@ a{
 .community-building{
     font-family: var(--primary-font);
     margin-top: 7vh;
-    width: 98%;
+    width: 90%;
     margin-left: auto;
+    margin-right: auto;
 }
 
 

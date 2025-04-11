@@ -13,19 +13,20 @@ import linkedin from './images/Linkedin.svg'
 import cassava from './images/cassava.svg'
 import Footer from '../Footer/footer'
 import Book from './images/book-group.png'
-import Arrow from './images/Arrow.svg'
-import YoutubeEmbed from '../../components/YoutubeEmbed'
+// import Arrow from './images/Arrow.svg'
+// import YoutubeEmbed from '../../components/YoutubeEmbed'
 import {gsap, Linear} from 'gsap'
 import {useGSAP} from '@gsap/react'
-import kwikpik from './images/kwik.svg'
-import dojima from './images/dojima.svg'
-import nft from './images/nft.svg'
-import despace from './images/despace.svg'
+// import kwikpik from './images/kwik.svg'
+// import dojima from './images/dojima.svg'
+// import nft from './images/nft.svg'
+// import despace from './images/despace.svg'
 // import images from '../Gallery/Gallery.js'
 // import Gallery from '../Gallery/Gallery.jsx'
 // import { images } from '../Gallery/Gallery.jsx'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import deb from './images/deb3.png'
+import deb2 from './images/deb-deb.png'
 
 
 
@@ -66,7 +67,7 @@ export default function home() {
       
       sections.forEach(section => {
         gsap.fromTo(section, 
-          { opacity: 1, y: 80 }, // Initial state before scrolling
+          { opacity: 1, y: 120 }, // Initial state before scrolling
           {
             opacity: 1,
             y: 0,  // State after the scroll
@@ -104,9 +105,9 @@ export default function home() {
     <div className="about-section">
       {/* <h2 className="about-header">About Me</h2> */}
       <p className="about-paragraph">
-      I’m Deborah, a Web 3 project manager and community builder with three years of experience
-       in the blockchain space. I’ve worked with projects like DeSpace Protocol, Coinstore, Dojima Network, ByteonBlast, 
-       and Cassava Network, playing a key role in their growth from the early stages to success.
+      Built for beginners, dreamers, techies, creatives, and anyone ready to take charge of their financial future, GICC is a community driven movement.
+       {/* Whether you're curious about trading, NFTs, DeFi, or building a full-blown crypto career, this is your launchpad. */}
+      {/* Inside the club, you get exclusive access to powerful tools, expert-led sessions, curated resources, and a vibrant Discord where women are learning, earning, and growing — together. */}
       </p>
       <div className="about-socials" id='about'>
         <div className="about-social-links">
@@ -118,32 +119,29 @@ export default function home() {
       </div>
     </div>
 
+    </section>
 
+
+    <section className='section'>
     <div className="roles-and-responsibilities">
-      <h2 className="roles-header">Roles And Responsibilities</h2>
-      <p className="roles-paragraph">In my role, <span className='color-pink'> I meticulously orchestrate project strategies</span>, ensuring they are finely tuned for maximum impact in the Web 3 landscape.
-      <span className='color-pink'>My expertise lies in community cultivation</span>, KOL marketing, and compelling content creation, all geared 
-      towards propelling projects towards unparalleled growth and visibility.
-      </p>
+      {/* <h2 className="roles-header">Why Join GICC?</h2> */}
+      <p className="roles-paragraph">- Feeling stuck in your finances?</p>
+      <p className='roles-paragraph'>- Tired of daily 9 to 5?</p>
+      <p className='color-pink roles-paragraph'>- Tired of round tripping?</p>
+      <p className='color-pink roles-paragraph'>- Looking for inspiration and a commmunity of motivated women?</p>
+      <p className='roles-paragraph'>- Looking for inspiration and a commmunity of motivated women?</p>
+      <p className='color-pink roles-paragraph'>- Looking for inspiration and a commmunity of motivated women?</p>
     </div>
 
     <div className="project-details">
-        <h2 className="project-details-header">Trusted By</h2>
+      <h2 className="project-header">Project Details</h2>
+      <p className="project-paragraph">- 1:1 coaching sessions</p>
+      <p className="project-paragraph">- Weekly group sessions</p>
+      <p className="project-paragraph">- Access to exclusive resources</p>
+      <p className="project-paragraph">- Access to exclusive resources</p>
+      <p className="project-paragraph">- Access to exclusive resources</p>
+      <p className="project-paragraph">- Access to exclusive resources</p>
 
-        {/* <div className="projects">
-          <img src={coinstore} alt="coinstore log" className="project-image coinstore" />
-          <img src={kwikpik} alt="byte logo" className="project-image kwikpik" />
-          <img src={cassava} alt="cassava log" className="project-image cassava" />
-          <img src={dojima} alt="dojima logo" className="project-image dojima" />
-          <img src={nft} alt="nft log" className="project-image nft" />
-          <img src={despace} alt="nft log" className="project-image despace" />
-          <img src={coinstore} alt="coinstore log" className="project-image coinstore" />
-          <img src={kwikpik} alt="byte logo" className="project-image kwikpik" />
-          <img src={cassava} alt="cassava log" className="project-image cassava" />
-          <img src={dojima} alt="dojima logo" className="project-image dojima" />
-          <img src={nft} alt="nft log" className="project-image nft" />
-          <img src={despace} alt="nft log" className="project-image despace" />
-        </div>   */}
     </div>  
       {/* <button className='see-more' onClick={handleClick}>{isClicked ? 'See less': 'See more'}</button> */}
     </section>
@@ -160,7 +158,7 @@ export default function home() {
 
     <section className='section' id='learn'>
     <div className="learn-crypto">
-        <h2 className="learn-header">Learn From the Best</h2>
+        <h2 className="learn-header">Join the girls </h2>
         <div className="books">
           <a href={"https://selar.co/m/dcryptgirlStore"}><img src={Book} alt="" className="book-photo" /></a>
           <a href={"https://selar.co/m/dcryptgirlStore"}><h3 className="book-title">Master Web3 With Easy Books, materials, community, Dcryptgirl and other prominent and professionals in the space</h3></a>
