@@ -74,7 +74,8 @@ a{
 }
 
 .hero-image{
-    width: 100%;
+    padding-top: 5%;
+    width: 85%;
 }
 
 .contact-me-btn {
@@ -111,11 +112,18 @@ a{
 }
 
 
-.about-header, .project-overview-header, .project-overview-header-design, .roles-header, .project-name, .community-header, .proofs-header, .youtube-header{
+.about-header, .project-overview-header, .project-overview-header-design, .project-name, .community-header, .proofs-header, .youtube-header{
     line-height: 28px;
     margin-bottom: 1.5vh;     
 }
 
+.roles-header{
+    margin-bottom: 3vh;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fcfdf2;
+    text-align: center;
+}
 
 .about-paragraph{
     font-size: 1.4rem;
@@ -144,6 +152,20 @@ a{
     font-size: 1.6rem;
     font-weight: 700;
     color: #fcfdf2;
+}
+
+.project-header{
+    font-size: 2rem;
+}
+
+.project-paragraph{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3vh;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #000000;
 }
 
 .project-overview-text, .each-project-text, .community-text-and-pic, .encouragement{
@@ -260,7 +282,7 @@ a{
 }
 
 .check-out{
-    margin-top: -1vh;
+    margin-top: 5vh;
 }
 
 

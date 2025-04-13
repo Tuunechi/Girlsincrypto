@@ -14,19 +14,10 @@ import cassava from './images/cassava.svg'
 import Footer from '../Footer/footer'
 import Book from './images/book-group.png'
 // import Arrow from './images/Arrow.svg'
-// import YoutubeEmbed from '../../components/YoutubeEmbed'
 import {gsap, Linear} from 'gsap'
 import {useGSAP} from '@gsap/react'
-// import kwikpik from './images/kwik.svg'
-// import dojima from './images/dojima.svg'
-// import nft from './images/nft.svg'
-// import despace from './images/despace.svg'
-// import images from '../Gallery/Gallery.js'
-// import Gallery from '../Gallery/Gallery.jsx'
-// import { images } from '../Gallery/Gallery.jsx'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import deb from './images/deb3.png'
-import deb2 from './images/deb-deb.png'
+import deb from './images/de-deb.png'
 
 
 
@@ -91,10 +82,10 @@ export default function home() {
         <Navbar/>
         <div className="hero">
             <div className="hero-text-group">
-              <h5 className='identity'>Join the girls in GirlsInCryptoClub!</h5>
+              <h5 className='identity'>Join the girls in GirlsInCryptoHub!</h5>
               <h2 className='profession'>Learn How to Start your <span className='span'>journey towards an active income</span> in the crypto market - even if you're a beginner!</h2>
             </div>
-            <a href={'https://calendly.com/dcryptgirl/30min'}><button className='contact-me-btn'>Get Access!</button></a>
+            <a href={'https://buy.stripe.com/test_dR6aHj4re0azdvG5kk'}><button className='contact-me-btn'>Get Access!</button></a>
         </div>
         <div className="hero-image-group">
           <img src={heart} alt="heart" className='heart'/>
@@ -105,7 +96,7 @@ export default function home() {
     <div className="about-section">
       {/* <h2 className="about-header">About Me</h2> */}
       <p className="about-paragraph">
-      Built for beginners, dreamers, techies, creatives, and anyone ready to take charge of their financial future, GICC is a community driven movement.
+      Built for beginners, dreamers, techies, creatives, and anyone ready to take charge of their financial future, GICH is a community driven movement.
        {/* Whether you're curious about trading, NFTs, DeFi, or building a full-blown crypto career, this is your launchpad. */}
       {/* Inside the club, you get exclusive access to powerful tools, expert-led sessions, curated resources, and a vibrant Discord where women are learning, earning, and growing — together. */}
       </p>
@@ -124,47 +115,23 @@ export default function home() {
 
     <section className='section'>
     <div className="roles-and-responsibilities">
-      {/* <h2 className="roles-header">Why Join GICC?</h2> */}
-      <p className="roles-paragraph">- Feeling stuck in your finances?</p>
-      <p className='roles-paragraph'>- Tired of daily 9 to 5?</p>
-      <p className='color-pink roles-paragraph'>- Tired of round tripping?</p>
-      <p className='color-pink roles-paragraph'>- Looking for inspiration and a commmunity of motivated women?</p>
-      <p className='roles-paragraph'>- Looking for inspiration and a commmunity of motivated women?</p>
-      <p className='color-pink roles-paragraph'>- Looking for inspiration and a commmunity of motivated women?</p>
+      <h2 className="roles-header">💔Feeling stuck?</h2>
+      <p className="roles-paragraph">- Tired of the 9 to 5 grind 😩??</p>
+      <p className='roles-paragraph'>- Always round-tripping but never really moving forward?🔁</p>
+      <p className='color-pink roles-paragraph'>- Struggling with your finances and don’t know where to start💸?</p>
+      <p className='color-pink roles-paragraph'>- Looking for real inspiration and a community of driven, motivated women👭??</p>
+      <p className='roles-paragraph'>- You're not alone — and you're in the right place.💅💅</p>
     </div>
 
     <div className="project-details">
-      <h2 className="project-header">Project Details</h2>
-      <p className="project-paragraph">- 1:1 coaching sessions</p>
-      <p className="project-paragraph">- Weekly group sessions</p>
-      <p className="project-paragraph">- Access to exclusive resources</p>
-      <p className="project-paragraph">- Access to exclusive resources</p>
-      <p className="project-paragraph">- Access to exclusive resources</p>
-      <p className="project-paragraph">- Access to exclusive resources</p>
-
+      <h2 className="project-header">🔓Get Access To</h2>
+      <p className="project-paragraph">- Beginner-friendly Web3 education — from crypto basics to advanced strategies</p>
+      <p className="project-paragraph">- Live sessions with experts who’ve actually done it</p>
+      <p className="project-paragraph">- A private, supportive Discord full of women on the same journey</p>
+      <p className="project-paragraph">- Exclusive tools, resources, and playbooks to fast-track your results</p>
+      <p className="project-paragraph">- Early access to jobs, grants, and earning opportunities in Web3 </p>
     </div>  
-      {/* <button className='see-more' onClick={handleClick}>{isClicked ? 'See less': 'See more'}</button> */}
-    </section>
-
-    {/* <section>
-    <div className="image-proofs">
-      // <h2 className='proofs-header'>For Your Eyes</h2>
-      <div className='images'>
-      {refinedImages}
-      </div>
-      <button className="load-more-pics" onClick={handleLoadMore}>Load More </button>
-    </div>
-    </section> */}
-
-    <section className='section' id='learn'>
-    <div className="learn-crypto">
-        <h2 className="learn-header">Join the girls </h2>
-        <div className="books">
-          <a href={"https://selar.co/m/dcryptgirlStore"}><img src={Book} alt="" className="book-photo" /></a>
-          <a href={"https://selar.co/m/dcryptgirlStore"}><h3 className="book-title">Master Web3 With Easy Books, materials, community, Dcryptgirl and other prominent and professionals in the space</h3></a>
-          <a href={'https://calendly.com/dcryptgirl/30min'}><button className='contact-me-btn check-out'>Get Access!</button></a>
-        </div>
-    </div>
+    <a href={'https://buy.stripe.com/test_dR6aHj4re0azdvG5kk'}><button className='contact-me-btn check-out'>Get Access!</button></a>
     </section>
    
 
